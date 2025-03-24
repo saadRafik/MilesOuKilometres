@@ -17,7 +17,6 @@ final List<List<double>> formules = [
 double convertirValeur(double valeur, String depuis, String vers) {
   int numDepuis = mesuresMap[depuis]!;
   int numVers = mesuresMap[vers]!;
-
   double multiplicateur = formules[numDepuis][numVers];
   return valeur * multiplicateur;
 }
